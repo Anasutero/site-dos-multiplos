@@ -1,0 +1,510 @@
+/*Import da fonte utilizada no site */
+@import url('https://fonts.googleapis.com/css2? família= Nunito:ital,wght@0,600;0,700;1,200;1,400 & display=swap');
+
+/*Inicio da Estilização que uso para toda a pagina ,botões, subtitulos sendo de "facil acesso" */
+:root{
+    --green:#070570;
+    --black:#000000;
+    --light-color:#ffffff;
+    --box-shadow:0.5rem 1.5rem rgba(247, 247, 247, 0.1);
+}
+.input-botao input {
+    background: none;
+    color: white;
+}
+
+*{
+    font-family: 'Nunito',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all.2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+section:nth-child(even){
+    background: #eee;
+}
+
+.sub-heading{
+    text-align: center;
+    color: #0905f1;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.heading{
+    text-align: center;
+    color:var(--black);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.btn, .input-botao{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    background:var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+}
+
+.btn:hover, .input-botao:hover{
+    background-color: #090df5;
+    letter-spacing: .1rem;
+}
+/*Inicio da Estilização que uso para toda a pagina ,botões, subtitulos sendo de "facil acesso" */
+
+/*Inicio da Estilização do  cabeçalho */
+header{
+   
+    top:0; left: 0; right: 0;
+    background:#070570;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+/* header.logo{
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+    max-width:200px;
+    max-height:150px;
+    width: auto;
+    height: auto;   
+} */
+
+header .logo {
+    width: 100px;
+    height: 100px;
+}
+
+header .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: 5rem 1.5rem;
+    color: #fff;
+}
+
+header .navbar a:active,
+header .navbar a:hover{
+    color: #000000;
+    background-color: rgb(94, 103, 110);
+}
+
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: rgb(3, 3, 3);
+    border-radius: 50%;
+    background: #eee;
+}
+
+header .icons i:hover,
+header .icons a:hover{
+    color: #fff;
+    background-color: rgb(124, 111, 111);
+    transform: rotate(360deg);
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+
+#search-form #search-box{
+
+    font-size: 2.0rem;
+    padding-right: 2.0rem;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    border-radius: 0.8rem;
+}
+
+#search-form #search-box::-webkit-search-cancel-button{
+
+    -webkit-appearance: none;
+
+}
+
+#search-form label{
+    color: white;
+    cursor: pointer;
+    font-size: 2.0rem;
+}
+/*Fim da Estilização do  cabeçalho */
+
+/*Inicio da Estilização do  carrinho */
+
+h1{
+    text-align: center;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+.table-head-item{
+    text-align: start;
+    border-radius: 1px solid #959595;
+    padding-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.second-col,
+.third-col{
+    width: 26%;
+
+}
+
+.cart-product td{
+    padding: 8px 0;
+}
+
+.product-indification{
+    display: flex;
+    align-items: center;
+}
+
+.cart-product-title{
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+.cart-product-price{
+    font-family: "Raleway",sans-serif;
+}
+
+.product-qtd-input{
+    width: 48px;
+    height: 34px;
+    border-radius: 6px;
+    border: 2px solid blue;
+    text-align: center;
+    background-color: #eee;
+}
+.remove-product-button{
+    margin-left: 12px;
+    background-color: #000000;
+
+    padding: 10px 8px;
+    border: 0;
+    border-radius: 6px;
+
+    transition: 0.2s;
+}
+
+.remove-product-button:hover{
+filter: brightness(0.8);
+}
+
+.cart-total-container{
+    border-top: 1px solid #959595;
+    text-align: end;
+    padding: 6px 16px 0 0;
+    font-size: 18px;
+}
+
+.cart-total-container strong{
+  margin-right: 12px;
+}
+
+.purchase-button{
+    display: flex;
+    margin: 24px auto 0;
+    background-color: #000000;
+    border: 0;
+    border-radius: 6px;
+    padding: 16px 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.purchase-button:hover{
+    filter: brightness(0.8);
+}
+
+.totalCarrinho{
+    font-size: 20px;
+    text-align: right;
+    font-family: 'Nunito',sans-serif;
+    font-weight: bold;
+    padding: 15px;
+    
+   
+}
+/*Fim da Estilização do carrinho */
+
+/*Inicio da estilização do forms para cadastro */
+.order form{
+    width: 90rem;
+    border-radius: 5rem;
+    box-shadow: var(--box-shadow);
+    border: .1rem solid rgba(255, 255, 255, 0.1);
+    background: #050441;
+    padding: 1.5rem;
+    margin: 0 auto;
+}
+.order form .inputbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.order form .inputbox .input{
+    width: 49%;
+}
+
+.order form .inputbox .input span{
+    display: block;
+    padding: 5rem 0 ;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+.order form .inputbox .input input,.input select,
+.order form .inputbox .input textarea{
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.order form .inputbox .input textarea{
+    height: 20rem;
+    resize: none;
+}
+
+.order form  .btn{
+    margin-top: 0;
+}
+/*Fim da estilização do forms para cadastro */
+
+
+/*Inicio da estilização do Rodapé*/
+footer{
+    width: 100%;
+    color: rgb(255, 255, 255);
+}
+footer .logo {
+    width: 100px;
+    height: 100px;
+}
+
+footer .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+
+#footer_content{
+    background-color:#070570;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 3rem 3.5rem;
+    font-size: 15px;
+}
+#footer_contacts img{
+    margin-bottom: 0.75rem;
+
+}
+
+#footer_social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+#footer_social_media .footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: #fff;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+#footer_social_media .footer-link:hover i{
+    font-size: 1.25rem;
+}
+#footer_social_media .footer-link:hover{
+    opacity: 0.8;
+}
+#instagram{
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+#facebook{
+    background-color: #4267b3;
+}
+#whatsapp{
+    background-color: #25d366;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+.footer-list .footer-link{
+    color: #ffffff;
+    transition: all 0.4s;
+}
+.footer-list .footer-link:hover{
+    color: #585656;
+}
+#footer-subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+#footer-subscribe p{
+    color: #666666;
+}
+#input_group{
+    display: flex;
+    align-items: center;
+    background-color: #797979;
+    border-radius: 4px;
+}
+#input_group input{
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+#input_group button{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: #000000;
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+#input_group button:hover{
+    opacity: 0.8;
+}
+#footer_copyrigth{
+    display: flex;
+    justify-content: center;
+    background-color:#070570;
+    font-size: 2.0rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+/*Fim da estilização do Rodapé*/
+
+/*Inicio da Estilização para deixar o site responsvio*/
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    .produtos .box-container .box img{
+        height:auto ;
+        width: 100%;
+
+    }
+  
+    header{
+        padding: 1rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+}
+@media (max-width:768px){
+
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top:100%; left: 0; right: 0;
+        background:#fff ;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0 , 100% 0 , 0 0);
+
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0,100% 0, 100%,0% 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+
+    }
+
+    #search-form #search-box{
+        width: 90%;
+        margin: 0 1 rem;
+    }
+    .order form .inputbox .input{
+        width: 100%;
+    }
+    
+}
+@media screen and(max-width:768px){
+    #footer-content{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+}
+    @media screen and(max-width:426px){
+        #footer-content{
+            grid-template-columns: repeat(1,1fr);
+            padding: 3rem 2 rem;
+        }
+
+}
+/*Fim da Estilização para deixar o site responsvio*/

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script async src="../js/carrinho.js" type = "module"></script>
+    <link rel="stylesheet" href="../css/carrinho.css">
+    <title>Carrinho</title>
+</head>
+<body>
+
+    <!--Inicio do cabeçalho-->
+    <header>
+        <div class="logo">
+            <img src="../img/Capturar.PNG" alt="">
+        </div>
+    
+        <nav class="navbar">
+            <a class="active"href="home.html">Home</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="sobrenos.html">Sobre nós</a>
+            <a href="login.html">login</a>
+            <a href="faleconosco.html">Fale conosco</a>
+            
+            
+        </nav>
+    
+        <form action="" id="search-form">
+            <input type="search" id="search-box" placeholder="Pesquise...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <a href="carrinho.html" class="fas fa-shopping-cart"></a>
+            <a href="https://wa.me/5519994137953?text=Ol%C3%A1%2C+gostaria+de+marcar+um+hor%C3%A1rio+com+Paulo+Su%C3%A9ro" class="fa-solid fa-phone"></a>
+         
+            </div>
+    </header>
+    <!--Fim do cabeçalho-->
+    <br>
+
+    <!--Inicio da construção do carrinho-->
+    <h1 class="heading">Seu carrinho</h1>
+    <section>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th table-head-item first-col>Item</th>
+                    <th table-head-item second-col>Preço</th>          
+                 </tr>
+            </thead>
+
+            <tbody>
+                 <!-- <tr class="cart-product">
+                    <td class="product-indification">
+                        <img class="cart-product-image" src="../img/produto2.jpeg" alt="Painel ripado">
+                        <strong class="cart-product-title">Painel Ripado De Sala Com Led Mdf</strong>
+                    </td>
+                    <td>
+                        <span class="cart-product-price"> R$7.000,00</span>
+                    </td>
+                    <td>
+                    <div class="trash">
+                             <i class="fa-solid fa-trash"></i>
+                    </div>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>--> 
+            </tfoot>
+        </table><br>
+        
+        <br>
+
+        <div class="totalCarrinho">
+              
+        </div><br>
+        <!-- meccher aqui mudar o link para botao -->
+        <!-- <a href="./produto1.html"><button id="${produto. codigo_produto}"></button></a> -->
+        <div class="input-botao">
+            <input type="button" name="comprar" value="FINALIZAR COMPRA">
+        </div>
+
+    </section>
+    <!--Fim da construção do carrinho-->
+
+     <!--Criação da formulario de endereço-->
+     <section class="order" id="order">
+        <h1 class="heading">Preencha seu endereço</h1>
+    
+        <form action="">
+    
+            <div class="inputbox">
+             <div class="input">
+                <span>Seu nome</span>
+                <input id ="name" type="text" placeholder="digite seu nome...">
+             </div>
+             <div class="input">
+                <span>Selecione seu estado</span>
+                    
+                    <select name="estados" id="Estados">
+                    <option value="acre">Acre</option>
+                    <option value="alagoas">Alagoas</option>
+                    <option value="amapa">Amapá</option>
+                    <option value="amazonas">Amazonas</option>
+                    <option value="bahia">Bahia</option>
+                    <option value="ceara">Ceará</option>
+                    <option value="esp.sant">Espiríto Santo</option>
+                    <option value="goias">Goiás</option>
+                    <option value="maranhao">Maranhão</option>
+                    <option value="mato grosso">Mato Grosso</option>
+                    <option value="minas gerais">Minas Gerais</option>
+                    <option value="para">Pará</option>
+                    <option value="paraiba">Paraíba</option>
+                    <option value="parana">Paraná</option>
+                    <option value="pernanbuco">Pernambuco</option>
+                    <option value="piaui">Piauí</option>
+                    <option value="rio de janeiro">Rio de Janeiro</option>
+                    <option value="rio grande do norte">Rio Grande do Norte</option>
+                    <option value="rio grande do sul">Rio Grande do Sul</option>
+                    <option value="rondonia">Rondoônia</option>
+                    <option value="roraima">Roraima</option>
+                    <option value="santa catarina">Santa Catarina</option>
+                    <option value="sao paulo">São Paulo</option>
+                    <option value="sergipe">Sergipe</option>
+                    <option value="tocantins">Tocantins</option>
+                    <option value="distrito federal">Distrito Federal</option>
+                    </select>
+             </div>
+             <div class="inputbox">
+                <div class="input">
+                   <span>Endereço de entrega</span>
+                   <input  id ="endereço"type="text" placeholder="digite seu endereço...">
+                </div>
+                <div class="input">
+                   <span>Seu cep</span>
+                   <input id="cep" type="number" placeholder="digite seu cep...">
+                </div>
+                <div class="input">
+                    <span>Seu Bairro</span>
+                    <input id="bairro"type="text" placeholder="digite seu bairo...">
+                 </div>
+                 <div class="input">
+                    <span>Numero da casa</span>
+                    <input id="casa" type="number" placeholder="digite o numero da casa...">
+                 </div>
+                
+                </div>
+            </div>
+        </div>
+      
+        </form>
+    
+      </section>
+      <!--Fim formulario de endereço-->
+
+  <!--Inicio do Rodapé-->
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <div class="logo">
+                    <img src="../img/Capturar.PNG" alt="">
+                </div>
+                <p>Siga nossas redes sociais</p>
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Entre em Contato</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">telefone:3829-1273</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Fale conosco:(19)99413-7953</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">E-mail:multiplos.sutero@gmail.com</a>
+                </li>
+
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Links rapidos</h3>
+                </li>
+                <li>
+                    <a href="home.html" class="footer-link">home</a>
+                </li>
+                <li>
+                    <a href="produtos.html" class="footer-link">Produtos</a>
+                </li>
+                <li>
+                    <a href="sobrenos.html" class="footer-link">Sobre Nos</a>
+                </li>
+                <li>
+                    <a href="login.html" class="footer-link">Login</a>
+                </li>
+            </ul>
+
+            <div id="footer-subscribe">
+                <h3>Se inscreva</h3>
+                <p>
+                    Entre com seu e-mail para receber nossas niotoficações sobre atualizações
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyrigth">
+            
+            multiplos.sutero@gmail.com
+
+        </div>
+    </footer>
+    <!--Fim do Rodapé-->
+
+</body>
+</html>
